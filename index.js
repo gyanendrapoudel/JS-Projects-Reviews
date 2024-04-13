@@ -7,7 +7,7 @@ const btn = document.querySelector('.btn')
 console.log(item1.innerHTML)
 
 // default review 
-let user =users[0]
+let user =users[3]
 let index = users.indexOf(user);
 
 
