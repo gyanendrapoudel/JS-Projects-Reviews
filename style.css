@@ -1,0 +1,153 @@
+:root{
+    --shadow:1px 1px 4px 3px lightgray;
+    --primary:  rgb(62, 157, 205);
+    --secondary: rgb(241, 218, 218);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.heading {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: orangered;
+    margin-bottom: 2rem;
+   
+    
+    
+}
+.heading-text{
+   
+    position: relative;
+}
+
+.heading-text::after{
+  
+    content: '';
+    width: 50%;
+    height: 4px;
+    background-color: var(--primary);
+    position: absolute; 
+    bottom: -10px;
+    left: 25%;
+
+  
+}
+.item{
+    width: 60%;
+    box-shadow: var(--shadow);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    
+}
+.item img{
+    margin-top: 1rem;
+    background: var(--secondary);
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+   
+}
+
+.img-item {
+    position: relative;
+}
+.outer-circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top:15px;
+    left:10px ; 
+    background:var(--primary);
+}
+.quote{
+   position: absolute; 
+   top:40px;
+   left: -20px;
+   color: white;
+   height: 40px;
+   font-size: 25px;
+   width: 40px;
+   text-align: center;
+   border-radius: 20px;
+   background-color: var(--primary);
+   
+}
+.name ,.profession{
+    
+   font-size: 1.4rem;
+
+}
+.profession{
+    color: var(--primary);
+}
+
+.description{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+}
+.icon{
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    color:rgb(38, 38, 227);
+    
+}
+.icon>span{
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+.icon>span:hover{
+    transform: scale(1.1);
+}
+.btn{
+
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: rgb(38, 38, 227); 
+    box-shadow: var(--shadow);
+    transition: all 0.15s linear;
+    cursor: pointer;
+    width: 50%;
+
+}
+.btn:hover{
+ transform: scale(1.1);
+}
+@media (max-width:600px) {
+    .btn{
+        width: 100%;
+    }
+}
