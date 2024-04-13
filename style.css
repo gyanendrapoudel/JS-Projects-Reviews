@@ -150,4 +150,8 @@ body{
     .btn{
         width: 100%;
     }
+    .item{
+     width: 80%;
+    }
+
 }
